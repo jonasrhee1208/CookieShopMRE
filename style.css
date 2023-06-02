@@ -1,64 +1,65 @@
-/* Set default font family and background color */
+/* Set the background color for the whole page */
 body {
-  font-family: Arial, sans-serif;
   background-color: #222;
 }
 
-/* Center the main container */
-.console-container {
+/* Center align the content inside the body */
+body center {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
-/* Style the console box */
+/* Style for the console div */
 .console {
   background-color: #333;
   border-radius: 5px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 500px;
 }
 
-/* Style the input field */
-.console-input input {
-  border: none;
+/* Style for the console input field */
+.console-input input[type="text"] {
   background-color: #444;
+  border: none;
+  border-radius: 3px;
   color: white;
-  padding: 10px;
-  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px;
   width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 10px;
 }
 
-/* Style the buttons */
+/* Style for the buttons */
 .console-button {
-  background-color: #4CAF50;
+  background-color: #007bff;
   border: none;
+  border-radius: 3px;
   color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  cursor: pointer;
   font-size: 16px;
   margin-right: 10px;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 5px 10px;
 }
 
-.console-button:hover {
-  background-color: #3e8e41;
+/* Style for the button wrapper */
+.button-wrapper {
+  margin-top: 20px;
 }
 
-/* Style the footer */
+/* Style for the console body */
+.consolebody {
+  margin-top: 20px;
+}
+
+/* Style for the footer */
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
-  height: 40px;
+  height: 30px;
   background-color: #333;
   color: white;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 5px;
 }
